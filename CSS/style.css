@@ -76,7 +76,7 @@ input:focus {
 #register-form p {
     text-align: center;
     margin-bottom: 1.5rem;
-    color: rgb(46, 46, 46);
+    color: rgba(46, 46, 46, 0.747);
     font-size: 0.8rem;
 }
 
@@ -97,6 +97,7 @@ input:focus {
 }
 
 #generate-password {
+    color: rgb(22, 22, 22);
     font-weight: bold;
     cursor: pointer;
     transition: 0.4s;
@@ -121,4 +122,21 @@ input:focus {
 #register-form #generated-password p {
     color: #81d340;
     margin-bottom: 0.5rem;
+}
+
+#register-form input[type="submit"] {
+    background-color: rgb(46, 46, 46);
+    color: #fff;
+    opacity: 0.8;
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 1.4rem;
+    max-width: 150px;
+    cursor: pointer;
+    align-self: flex-end;
+    transition: 0.4s;
+}
+
+#register-form input[type="submit"]:hover {
+    opacity: 100;
 }
