@@ -20,10 +20,42 @@ const getSymbol = () => {
     return symbols[Math.floor(Math.random() * symbols.length)];
 }
 
-// O console serve para testa o código: console.log(getSymbol());
-// sendo assim serve para vê se está funcionando.
+const generatePassword = (
+        getLetterLowerCase,
+        getLetterUpperCase,
+        getNumber,
+        getSymbol
+) => {
+    let password = ""
+
+    const passwordLength = 10
+
+    const generators = [
+        getLetterLowerCase,
+        getLetterUpperCase,
+        getNumber,
+        getSymbol
+    ]
+    for(i = 0; i < passwordLength; i = i + 4) {
+        generators.forEach(() => {
+            const randomValue = 
+            generators[Math.floor(Math.random * generators.length)]();
+
+            console.log(randomValue);
+        });
+    }
+};
+
 
 //Eventos
 generatePasswordButton.addEventListener("click", () => {
-    console.log("teste");
+    generatePassword(
+        getLetterLowerCase,
+        getLetterUpperCase,
+        getNumber,
+        getSymbol
+    );
 });
+
+// O console serve para testa o código: console.log(getSymbol());
+// sendo assim serve para vê se está funcionando.
