@@ -1,6 +1,6 @@
 //Seleção de Elementos
-const generatePasswordButton = document .querySelector("generate-password");
-const generatePasswordElement = document.querySelector("generated-password");
+const generatePasswordButton = document.querySelector("#generate-password");
+const generatedPasswordElement = document.querySelector("#generated-password");
 
 //Funções
 generatePasswordButton.addEventListener("click", () => {
