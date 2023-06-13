@@ -15,7 +15,7 @@ url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0
 html,
 body {
     height: auto;
-    min-height: 100vh;
+    min-height: 95vh;
 }
 
 body {
